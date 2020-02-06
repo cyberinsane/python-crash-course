@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <title>Expenses</title>
+</head>
+<body>
+ <h1>{{header}}</h1>
+
+ <ol>
+{% for i in body %}
+ <li><h2>{{ i.description }}</h2></li>
+{% endfor %}
+ </ol>
+
+</body>
+</html>
