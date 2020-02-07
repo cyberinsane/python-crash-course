@@ -1,8 +1,10 @@
 # python-crash-course
 
-Includes chapters for Python Crash Course session.
+<p>Includes Chapters for Python Crash Course session. </p>
+
 
 ## What will you learn:
+
 <ul>
    <li>Python Essentials</li>
    <li>Creating Server</li>
@@ -11,22 +13,34 @@ Includes chapters for Python Crash Course session.
 </ul>
 
 
-## Prerequisites for the session.
+## Prerequisites:
 
-1. Install Python:
-</br>$ brew install python3
-</br>More details:
-</br>https://docs.python-guide.org/starting/install3/osx/
+#### 1. Install Python:
+```
+$ brew install python3
+```
+- More details:
+- https://docs.python-guide.org/starting/install3/osx/
 
 
-2. Install PyCharm
-</br>https://www.jetbrains.com/pycharm/download/#section=mac
+#### 2. Install PyCharm
+https://www.jetbrains.com/pycharm/download/#section=mac
 
 
 ## Post clone
 
-Create virtual env
-python3 -m venv venv
+###### Create virtual environment
+```
+$ python3 -m venv venv
+```
 
-Install dependencies
-pip3 install -r requirements.txt
+###### Install dependencies
+```
+$ pip3 install -r requirements.txt
+```
+
+
+###### Run Uvicorn Server
+```
+$ uvicorn expense:app --host 0.0.0.0 --port 8000
+```
